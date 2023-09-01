@@ -1,5 +1,5 @@
-# Coopis2023 CC4MCSLAEnriched
-Repository presenting our prototype for Coopis 2023
+# IEEEBigData2023 CC4MCSLAEnriched
+Repository presenting our prototype for IEEE Big Data 2023
 
 The notebook describes our approach to state machine abstraction and compliance checking using the alignment technique. The approach involves three components, namely, the annotation, the abstraction, and the checker.
 
