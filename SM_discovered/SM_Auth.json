@@ -1,0 +1,174 @@
+{
+    "_StateMachine__graph": {
+        "_adj": {
+            "S1": {
+                "S2": {}
+            },
+            "S2": {
+                "S3": {}
+            },
+            "S3": {
+                "S4": {}
+            },
+            "S4": {},
+            "S5": {}
+        },
+        "_node": {
+            "S1": {},
+            "S2": {},
+            "S3": {},
+            "S4": {},
+            "S5": {}
+        },
+        "_pred": {
+            "S1": {},
+            "S2": {
+                "S1": {}
+            },
+            "S3": {
+                "S2": {}
+            },
+            "S4": {
+                "S3": {}
+            },
+            "S5": {}
+        },
+        "_succ": {
+            "S1": {
+                "S2": {}
+            },
+            "S2": {
+                "S3": {}
+            },
+            "S3": {
+                "S4": {}
+            },
+            "S4": {},
+            "S5": {}
+        },
+        "graph": {}
+    },
+    "_StateMachine__name": "Auth",
+    "_StateMachine__states": [
+        {
+            "_state__Resourcerequirements": {
+                "replicas": "2"
+            },
+            "_state__name": "S1",
+            "_state__occurence": 1,
+            "_state__type": "isInitial"
+        },
+        {
+            "_state__Resourcerequirements": {
+                "replicas": "4"
+            },
+            "_state__name": "S2",
+            "_state__occurence": 1,
+            "_state__type": "isNormal"
+        },
+        {
+            "_state__Resourcerequirements": {
+                "replicas": "6"
+            },
+            "_state__name": "S3",
+            "_state__occurence": 1,
+            "_state__type": "isNormal"
+        },
+        {
+            "_state__Resourcerequirements": {
+                "replicas": "8"
+            },
+            "_state__name": "S4",
+            "_state__occurence": 1,
+            "_state__type": "isNormal"
+        },
+        {
+            "_state__Resourcerequirements": {
+                "replicas": "0"
+            },
+            "_state__name": "S5",
+            "_state__occurence": 1,
+            "_state__type": "isFinal"
+        }
+    ],
+    "_StateMachine__transitions": [
+        {
+            "_transition__actions": [
+                {
+                    "_action__attributes": {
+                        "replicas": 2
+                    },
+                    "_action__id": "A1",
+                    "_action__type": "Scale-out"
+                }
+            ],
+            "_transition__events": [
+                {
+                    "_event__id": "E1",
+                    "_event__predicate": {
+                        "metric": "Cpu Usage",
+                        "operator": ">=",
+                        "refValue": 15.0,
+                        "time": "60.0s"
+                    },
+                    "_event__type": "ResourceRelatedEvent"
+                }
+            ],
+            "_transition__name": "T1",
+            "_transition__source": "S1",
+            "_transition__target": "S2"
+        },
+        {
+            "_transition__actions": [
+                {
+                    "_action__attributes": {
+                        "replicas": 2
+                    },
+                    "_action__id": "A1",
+                    "_action__type": "Scale-out"
+                }
+            ],
+            "_transition__events": [
+                {
+                    "_event__id": "E1",
+                    "_event__predicate": {
+                        "metric": "Cpu Usage",
+                        "operator": ">=",
+                        "refValue": 15.0,
+                        "time": "60.0s"
+                    },
+                    "_event__type": "ResourceRelatedEvent"
+                }
+            ],
+            "_transition__name": "T2",
+            "_transition__source": "S2",
+            "_transition__target": "S3"
+        },
+        {
+            "_transition__actions": [
+                {
+                    "_action__attributes": {
+                        "replicas": 2
+                    },
+                    "_action__id": "A1",
+                    "_action__type": "Scale-out"
+                }
+            ],
+            "_transition__events": [
+                {
+                    "_event__id": "E1",
+                    "_event__predicate": {
+                        "metric": "Cpu Usage",
+                        "operator": ">=",
+                        "refValue": 11.67,
+                        "time": "60.0s"
+                    },
+                    "_event__type": "ResourceRelatedEvent"
+                }
+            ],
+            "_transition__name": "T3",
+            "_transition__source": "S3",
+            "_transition__target": "S4"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+Timestamp,Source,Resource Name,Event-Type,Metric,Value
+00:00:03,Provider,UI,Service_Create,replicas,2
+00:00:04,Provider,UI,Container_Create,/,/
+00:00:05,Provider,UI,Container_Start,/,/
+00:00:05,Ressource,UI,Ressource_Usage,Cpu Usage,15
+00:01:05,Ressource,UI,Ressource_Usage,Cpu Usage,15
+00:01:12,Provider,UI,Service_Update,replicas,4
+00:01:13,Provider,UI,Container_Create,/,/
+00:01:14,Provider,UI,Container_Start,/,/
+00:01:15,Ressource,UI,Ressource_Usage,Cpu Usage,5
+00:01:20,Ressource,UI,Ressource_Usage,Cpu Usage,15
+00:01:25,Ressource,UI,Ressource_Usage,Cpu Usage,15
+00:02:15,Provider,UI,Service_Update,replicas,2
+00:02:16,Provider,UI,Container_Destroy,/,/
+00:02:17,Provider,UI,Container_Stop,/,/
+00:03:00,Ressource,UI,Ressource_Usage,Cpu Usage,5
+00:03:05,Ressource,UI,Ressource_Usage,Cpu Usage,15
+00:03:15,Ressource,UI,Ressource_Usage,Cpu Usage,15
+00:03:45,Provider,UI,Service_Update,replicas,0
+00:03:46,Provider,UI,Container_Destroy,/,/
+00:03:47,Provider,UI,Container_Stop,/,/
+00:00:03,Provider,Auth,Service_Create,replicas,2
+00:00:04,Provider,Auth,Container_Create,/,/
+00:00:05,Provider,Auth,Container_Start,/,/
+00:00:05,Ressource,Auth,Ressource_Usage,Cpu Usage,15
+00:01:05,Ressource,Auth,Ressource_Usage,Cpu Usage,15
+00:01:12,Provider,Auth,Service_Update,replicas,4
+00:01:13,Provider,Auth,Container_Create,/,/
+00:01:14,Provider,Auth,Container_Start,/,/
+00:01:15,Ressource,Auth,Ressource_Usage,Cpu Usage,5
+00:01:20,Ressource,Auth,Ressource_Usage,Cpu Usage,15
+00:01:25,Ressource,Auth,Ressource_Usage,Cpu Usage,15
+00:02:15,Provider,Auth,Service_Update,replicas,6
+00:02:16,Provider,Auth,Container_Create,/,/
+00:02:17,Provider,Auth,Container_Start,/,/
+00:02:20,Ressource,Auth,Ressource_Usage,Cpu Usage,5
+00:02:25,Ressource,Auth,Ressource_Usage,Cpu Usage,15
+00:02:30,Ressource,Auth,Ressource_Usage,Cpu Usage,15
+00:02:31,Provider,Auth,Service_Update,replicas,8
+00:02:32,Provider,Auth,Container_Create,/,/
+00:02:33,Provider,Auth,Container_Start,/,/
+00:02:35,Ressource,Auth,Ressource_Usage,Cpu Usage,5
+00:02:40,Ressource,Auth,Ressource_Usage,Cpu Usage,15
+00:02:45,Ressource,Auth,Ressource_Usage,Cpu Usage,15
+00:03:45,Provider,Auth,Service_Update,replicas,0
+00:03:46,Provider,Auth,Container_Destroy,/,/
+00:03:47,Provider,Auth,Container_Stop,/,/
+00:00:03,Provider,Stor,Service_Create,replicas,4
+00:00:04,Provider,Stor,Container_Create,/,/
+00:00:05,Provider,Stor,Container_Start,/,/
+00:00:05,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:01:05,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:01:12,Provider,Stor,Service_Update,replicas,6
+00:01:13,Provider,Stor,Container_Create,/,/
+00:01:14,Provider,Stor,Container_Start,/,/
+00:01:15,Ressource,Stor,Ressource_Usage,Cpu Usage,5
+00:01:20,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:01:25,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:02:15,Provider,Stor,Service_Update,replicas,8
+00:02:16,Provider,Stor,Container_Create,/,/
+00:02:17,Provider,Stor,Container_Start,/,/
+00:02:20,Ressource,Stor,Ressource_Usage,Cpu Usage,5
+00:02:25,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:02:26,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:02:30,Provider,Stor,Service_Update,replicas,10
+00:02:31,Provider,Stor,Container_Create,/,/
+00:02:32,Provider,Stor,Container_Start,/,/
+00:02:33,Ressource,Stor,Ressource_Usage,Cpu Usage,5
+00:02:34,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:02:35,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:02:45,Provider,Stor,Service_Update,replicas,12
+00:02:46,Provider,Stor,Container_Create,/,/
+00:02:47,Provider,Stor,Container_Start,/,/
+00:02:50,Ressource,Stor,Ressource_Usage,Cpu Usage,5
+00:02:51,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:02:52,Ressource,Stor,Ressource_Usage,Cpu Usage,15
+00:03:00,Provider,Stor,Service_Update,replicas,0
+00:03:01,Provider,Stor,Container_Destroy,/,/
+00:03:02,Provider,Stor,Container_Stop,/,/

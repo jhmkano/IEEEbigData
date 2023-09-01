@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/onto.owl"
+         xmlns="http://test.org/onto.owl#">
+
+<owl:Ontology rdf:about="http://test.org/onto.owl"/>
+
+<owl:ObjectProperty rdf:about="#isRelatedTo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:range rdf:resource="#stateMachine"/>
+  <rdfs:domain rdf:resource="#eventType"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#stateMachine">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#State">
+  <rdfs:subClassOf rdf:resource="#stateMachine"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Start">
+  <rdfs:subClassOf rdf:resource="#State"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Execute">
+  <rdfs:subClassOf rdf:resource="#State"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Complete">
+  <rdfs:subClassOf rdf:resource="#State"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Transition">
+  <rdfs:subClassOf rdf:resource="#stateMachine"/>
+</owl:Class>
+
+<owl:Class rdf:about="#eventType">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<eventType rdf:about="#Service_Create">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isRelatedTo rdf:resource="#Start"/>
+</eventType>
+
+<eventType rdf:about="#Service_Remove">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isRelatedTo rdf:resource="#Start"/>
+</eventType>
+
+<eventType rdf:about="#Service_Update">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isRelatedTo rdf:resource="#Start"/>
+</eventType>
+
+<eventType rdf:about="#Container_Create">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isRelatedTo rdf:resource="#Execute"/>
+</eventType>
+
+<eventType rdf:about="#Container_Destroy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isRelatedTo rdf:resource="#Execute"/>
+</eventType>
+
+<eventType rdf:about="#Container_Start">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isRelatedTo rdf:resource="#Complete"/>
+</eventType>
+
+<eventType rdf:about="#Container_Stop">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isRelatedTo rdf:resource="#Complete"/>
+</eventType>
+
+<eventType rdf:about="#Ressource_Usage">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isRelatedTo rdf:resource="#Transition"/>
+</eventType>
+
+
+</rdf:RDF>
